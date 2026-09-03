@@ -36,6 +36,8 @@ Sous Linux, le serveur DHCP par défaut est **isc-dhcp-server**, une solution op
 
 ### Fonctionnement (échange en 4 temps)
 
+<img src="./images/Fonctionnement_DHCP.png" alt="échange en 4 temps dhcp" width="50%">
+
 | Étape | Description |
 |---|---|
 | `DHCPDISCOVER` | Le client demande un bail, avec une adresse source `0.0.0.0` et une destination en broadcast `255.255.255.255`, accompagnée de son adresse MAC. |
