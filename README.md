@@ -29,7 +29,7 @@ Le TP est découpé en trois parties, chacune correspondant à un niveau de comp
 |---|---|---|
 | **A** | Création d'un serveur DHCP sur Raspberry Pi, avec routage NAT (partage de connexion) vers Internet | [Créer serveur DHCP sur Raspberry](./Partie%20A%20—%20Création%20d'un%20serveur%20DHCP%20sur%20Raspberry%20Pi/procedure-dhcp-raspberry.md) |
 | **B** | Redondance DHCP « à plat » : deux serveurs actifs sur la même plage d'adresses, mise en évidence des risques de conflit | [Redondance DHCP](./Partie%20B%20—%20Redondance%20DHCP/procedure-redondance-dhcp.md) |](https://github.com/gcemvoutou/Serveur-DHCP/tree/main/Partie%20B%20%E2%80%94%20Redondance%20DHCP)
-| **C** | Agent relais DHCP (théorie) et mise en place d'une grappe DHCP en haute disponibilité (**DHCP Failover**) | [Agent relais DHCP & Grappe DHCP](./Partie%20C%20%E2%80%94%20Agent%20relais%20DHCP) ](https://github.com/gcemvoutou/Serveur-DHCP/blob/main/Partie%20C%20%E2%80%94%20Agent%20relais%20DHCP/procedure-agent-relais.md)|
+| **C** | Agent relais DHCP (théorie) et mise en place d'une grappe DHCP en haute disponibilité (**DHCP Failover**) | [Agent relais DHCP & Grappe DHCP](./Partie%20C%20%E2%80%94%20Agent%20relais%20DHCP/procedure-agent-relais.md)|
 ---
 
 ## Progression pédagogique
