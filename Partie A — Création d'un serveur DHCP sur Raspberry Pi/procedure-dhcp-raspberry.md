@@ -330,4 +330,4 @@ Ce schéma synthétise l'architecture complète : le Raspberry Pi assure à la f
 
 ---
 
-[⬅ Retour au sommaire du projet](../README.md) · [Partie suivante : Redondance DHCP ➡][(../Partie%20B%20%E2%80%94%20Redondance%20DHCP/procedure-redondance-dhcp.md)
+[⬅ Retour au sommaire du projet](../README.md) · [Partie suivante : Redondance DHCP ➡](../Partie%20B%20%E2%80%94%20Redondance%20DHCP/procedure-redondance-dhcp.md)
