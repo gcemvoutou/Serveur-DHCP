@@ -254,8 +254,8 @@ Une solution de type **DHCP Failover** permettrait de synchroniser automatiqueme
 
 ---
 
-[⬅ Partie précédente : Serveur DHCP sur Raspberry](..Partie%20A%20%E2%80%94%20Cr%C3%A9ation%20d'un%20serveur%20DHCP%20sur%20Raspberry%20Pi/procedure-dhcp-raspberry.md) 
+[⬅ Partie précédente : Serveur DHCP sur Raspberry](../Partie%20A%20—%20Création%20d'un%20serveur%20DHCP%20sur%20Raspberry%20Pi/procedure-dhcp-raspberry.md) 
 
 [Retour au sommaire du projet](../README.md) · 
 
-[Partie suivante : Agent relais DHCP & Grappe DHCP ➡](../C%20-%20Agent%20relais%20DHCP/procedure-agent-relais.md)
+[Partie suivante : Agent relais DHCP & Grappe DHCP ➡](../Partie%20C%20—%20Agent%20relais%20DHCP/procedure-agent-relais.md)
