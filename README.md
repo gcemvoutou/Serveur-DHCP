@@ -50,7 +50,7 @@ unique                   sans synchronisation        (Failover + relais)
 
 ## Environnement technique
 
-- **OS serveurs :** Raspberry Pi OS (Debian) / Ubuntu Server
+- **OS serveurs :** Raspberry Pi OS / Ubuntu Server
 - **OS clients de test :** Windows 11, Linux
 - **Service DHCP :** isc-dhcp-server (ISC)
 - **Virtualisation :** VirtualBox (réseau NAT interne pour les parties B et C)
