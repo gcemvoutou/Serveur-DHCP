@@ -224,5 +224,6 @@ La mise en place d'une grappe DHCP en failover répond directement aux limites i
 
 ---
 
-[⬅ Partie précédente : Redondance DHCP](./Partie%20B%20%E2%80%94%20Redondance%20DHCP)
+[⬅ Partie précédente : Redondance DHCP](../Partie%20B%20—%20Redondance%20DHCP/procedure-redondance-dhcp.md)
+
 [Retour au sommaire du projet](../README.md)
