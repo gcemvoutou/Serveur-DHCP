@@ -1,4 +1,6 @@
 # Serveur DHCP — Mise en place, redondance et relais
+![Linux](https://img.shields.io/badge/Linux-Serveur%20DHCP-FCC624?logo=linux&logoColor=black)
+![Type](https://img.shields.io/badge/Type-Scolaire-blue)
 
 ## Présentation
 
