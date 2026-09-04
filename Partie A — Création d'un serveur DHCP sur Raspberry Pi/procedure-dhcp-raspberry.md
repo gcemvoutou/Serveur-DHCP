@@ -139,14 +139,14 @@ Configuration retenue pour `dhcpd.conf` :
 
 ```conf
 # Notre réseau
-subnet 192.168.100.0 netmask 255.255.255.0 {
-  range 192.168.100.10 192.168.100.20;
-  option routers 192.168.100.254;
-  option domain-name-servers 8.8.8.8;
-  option domain-name "mondomaine.org";
-  option broadcast-address 192.168.100.255;
-  default-lease-time 86400;
-  max-lease-time 604800;
+subnet 192.168.100.0 netmask 255.255.255.0 { # Déclaration du sous-réseau géré et de son masque de sous-réseau
+  range 192.168.100.10 192.168.100.20;     # Plage d'adresses IP dynamiques distribuées aux clients
+  option routers 192.168.100.254;         # Adresse de la passerelle par défaut transmise aux clients
+  option domain-name-servers 8.8.8.8;     # Adresse du serveur DNS configuré pour les clients
+  option domain-name "mondomaine.org";    # Nom de domaine attribué au réseau local
+  option broadcast-address 192.168.100.255; # Adresse de diffusion (broadcast) du sous-réseau
+  default-lease-time 86400;               # Durée de location (bail) par défaut d'une IP en secondes (24h)
+  max-lease-time 604800;                  # Durée maximale d'attribution d'un bail en secondes (7 jours)
 }
 ```
 
