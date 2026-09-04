@@ -95,7 +95,7 @@ Puis on recharge la configuration :
 sudo sysctl -p /etc/sysctl.conf
 ```
 
-<img src="./images/3-sysctl-ip-forward.png" alt="Activation de l'IP forwarding" width="50%">
+<img src="./images/3-sysctl-ip-forward.png" alt="Activation de l'IP forwarding" width="45%">
 
 ### 5.2 Règles de NAT (iptables)
 
