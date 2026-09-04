@@ -215,7 +215,7 @@ ipconfig /renew "Ethernet"
 
 > `images/08-renew-windows.png`
 
-Le client récupère la même adresse IP (`192.168.100.12`), le bail précédent n'ayant pas encore expiré.
+**Cette commande** force l'adaptateur **réseau** spécifié (ici "Ethernet") à contacter à nouveau le serveur DHCP pour obtenir une configuration IP ,Le client récupère la même adresse IP (`192.168.100.12`), car le bail précédent n'a pas encore expiré.
 
 ---
 
