@@ -51,7 +51,7 @@ Sous Linux, le serveur DHCP par défaut est **isc-dhcp-server**, une solution op
 
 Le Raspberry Pi fait ici office à la fois de **serveur DHCP** et de **routeur** entre le réseau local (interface `eth0`) et Internet (interface `wlan0`, connectée en Wi-Fi automatique).
 
-<img src="./images/1-schema-reseau.png" alt="Schéma réseau" width="50%">
+<img src="./images/1-schema-reseau.png" alt="Schéma réseau" width="45%">
 
 > [!IMPORTANT]
 > Comme le Raspberry Pi assure le routage entre deux réseaux, l'activation du routage IP (`ip_forward`) et la configuration du NAT via `iptables` sont **obligatoires**. Ce ne sera plus le cas dans les parties suivantes, où le routage est assuré directement par l'infrastructure réseau.
