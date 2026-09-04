@@ -161,7 +161,8 @@ sudo systemctl start isc-dhcp-server
 sudo systemctl status isc-dhcp-server
 ```
 
-> `images/05-status-service.png`
+<img src="./images/5-status-service.png" alt="Démarrage et vérification du service
+" width="50%">
 
 Une fois le service démarré, on relie le Raspberry Pi à un switch (sans autre serveur DHCP actif dessus) et on y connecte un poste client, afin qu'il obtienne automatiquement une adresse IP par DHCP.
 
@@ -227,11 +228,11 @@ Une machine Linux connectée au switch obtient automatiquement une adresse compr
 ip a
 ```
 
-<img src="./images/9-client-linux-ip-a.png" alt="Test côté client Linux" width="50%">
+<img src="./images/9-client-linux-ip-a.png" alt="Test côté client Linux" width="55%">
 
 L'adresse obtenue (`192.168.100.13/24`) est confirmée côté serveur dans le fichier des baux, aux côtés de la machine Windows.
 
-<img src="./images/10-leases-client-linux.png" alt="Test côté client Linux bis" width="50%">
+<img src="./images/10-leases-client-linux.png" alt="Test côté client Linux bis" width="40%">
 
 ---
 
@@ -298,7 +299,7 @@ sudo dhclient -r    # libère le bail en cours
 sudo dhclient       # redemande une adresse au serveur DHCP
 ```
 
-<img src="./images/13-client-linux-ip-fixe.png" alt="Réservation d'une adresse IP fixe " width="50%">
+<img src="./images/13-client-linux-ip-fixe.png" alt="Réservation d'une adresse IP fixe " width="55%">
 
 La machine obtient bien l'adresse IP fixe configurée (`192.168.100.5`).
 
@@ -325,7 +326,7 @@ La machine obtient bien l'adresse IP fixe configurée (`192.168.100.5`).
 
 ## 15. Schéma récapitulatif
 
-<img src="./images/15-schema-recapitulatif.png" alt="Schéma récapitulatif" width="50%">
+<img src="./images/15-schema-recapitulatif.png" alt="Schéma récapitulatif" width="60%">
 
 Ce schéma synthétise l'architecture complète : le Raspberry Pi assure à la fois la distribution des adresses IP sur le réseau local (`192.168.100.0/24`) et le routage vers Internet via son interface Wi-Fi.
 
