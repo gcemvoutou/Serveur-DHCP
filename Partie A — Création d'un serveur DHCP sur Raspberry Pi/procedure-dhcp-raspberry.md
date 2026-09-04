@@ -227,7 +227,7 @@ Une machine Linux connectée au switch obtient automatiquement une adresse compr
 ip a
 ```
 
-<img src="./images/09-client-linux-ip-a.png" alt="Test côté client Linux" width="50%">
+<img src="./images/9-client-linux-ip-a.png" alt="Test côté client Linux" width="50%">
 
 L'adresse obtenue (`192.168.100.13/24`) est confirmée côté serveur dans le fichier des baux, aux côtés de la machine Windows.
 
