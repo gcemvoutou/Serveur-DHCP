@@ -326,7 +326,7 @@ La machine obtient bien l'adresse IP fixe configurée (`192.168.100.5`).
 
 ## 15. Schéma récapitulatif
 
-<img src="./images/15-schema-recapitulatif.png" alt="Schéma récapitulatif" width="60%">
+<img src="./images/15-schema-recapitulatif.png" alt="Schéma récapitulatif" width="80%">
 
 Ce schéma synthétise l'architecture complète : le Raspberry Pi assure à la fois la distribution des adresses IP sur le réseau local (`192.168.100.0/24`) et le routage vers Internet via son interface Wi-Fi.
 
