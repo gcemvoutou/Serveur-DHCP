@@ -25,7 +25,7 @@ Disposer d'un second serveur DHCP en cas de panne du premier, en configurant deu
 
 ## 1. Architecture à réaliser
 
-<img src="./images/1-architecture-cible.png" alt="architecture-cible" width="50%">
+<img src="./images/1-architecture-cible.png" alt="architecture-cible" width="45%">
 
 L'architecture repose sur un réseau NAT VirtualBox (`10.0.2.0/24`) regroupant quatre machines virtuelles :
 
@@ -61,14 +61,14 @@ IPv4 Prefix  : 10.0.2.0/24
 Enable DHCP  : décoché
 ```
 
-> `images/02-virtualbox-reseau-nat.png`
+<img src="./images/2-virtualbox-reseau-na.png" alt="Configuration du réseau NAT VirtualBox" width="45%">
 
 > [!IMPORTANT]
 > Le DHCP intégré de VirtualBox **doit impérativement être désactivé** sur ce réseau NAT, sous peine d'entrer en conflit avec les serveurs DHCP mis en place dans ce TP.
 
 Les quatre VM sont ensuite rattachées à cette carte réseau NAT (`10.0.2.0/24`, passerelle `10.0.2.1`) :
 
-> `images/03-virtualbox-adaptateur-reseau.png`
+<img src="./images/3-virtualbox-adaptateur-reseau.png" alt="Configuration du réseau NAT VirtualBox bis" width="45%">
 
 ---
 
@@ -92,7 +92,7 @@ Les quatre VM sont ensuite rattachées à cette carte réseau NAT (`10.0.2.0/24`
 sudo apt update && sudo apt upgrade -y
 ```
 
-> `images/04-maj-serveur1.png`
+<img src="./images/4-maj-serveur1.png" alt="Mise à jour du système" width="45%">
 
 ### 5.2 Installation d'isc-dhcp-server
 
