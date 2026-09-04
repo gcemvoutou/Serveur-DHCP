@@ -31,7 +31,7 @@
 Les trames ARP et BOOTP (sur lesquelles repose le protocole DHCP) ne traversent pas les routeurs. Sur un réseau segmenté en plusieurs sous-réseaux, il est donc impossible d'utiliser un serveur DHCP unique pour l'ensemble des segments : soit un serveur DHCP est déployé sur chaque sous-réseau, soit un **agent relais DHCP** est utilisé.
 
 > [!NOTE]
-> Un agent relais DHCP est un service chargé de transmettre les requêtes DHCP d'un client, reçues sur un sous-réseau donné, vers un serveur DHCP situé sur un autre sous-réseau — et inversement pour la réponse. Il doit connaître l'adresse IP du serveur DHCP cible et posséder lui-même une adresse IP fixe.
+> Un agent relais DHCP est un service chargé de transmettre les requêtes DHCP d'un client, reçues sur un sous-réseau donné, vers un serveur DHCP situé sur un autre sous-réseau et inversement pour la réponse. Il doit connaître l'adresse IP du serveur DHCP cible et posséder lui-même une adresse IP fixe.
 
 L'agent relais est généralement installé sur la **passerelle** du sous-réseau concerné, à l'aide du paquet `dhcp-relay`.
 
