@@ -162,7 +162,7 @@ sudo systemctl status isc-dhcp-server
 ```
 
 <img src="./images/5-status-service.png" alt="Démarrage et vérification du service
-" width="50%">
+" width="60%">
 
 Une fois le service démarré, on relie le Raspberry Pi à un switch (sans autre serveur DHCP actif dessus) et on y connecte un poste client, afin qu'il obtienne automatiquement une adresse IP par DHCP.
 
@@ -261,7 +261,7 @@ ipconfig /renew
 
 Le client obtient bien une adresse comprise dans la nouvelle plage (`192.168.100.40 - 192.168.100.50`).
 
-<img src="./images/12-leases-nouvelle-plage.png" alt="Modification de la plage d'adresses bis " width="50%">
+<img src="./images/12-leases-nouvelle-plage.png" alt="Modification de la plage d'adresses bis " width="45%">
 
 
 ---
