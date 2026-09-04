@@ -172,7 +172,7 @@ Les échanges DHCP (`DHCPDISCOVER`, `DHCPOFFER`, `DHCPREQUEST`, `DHCPACK`) sont 
 
 ## 8. Test côté client Windows
 
-<img src="./images/6-client-windows-ipconfig.png" alt="Test côté client Windows" width="50%">
+<img src="./images/6-client-windows-ipconfig.png" alt="Test côté client Windows" width="35%">
 
 | Paramètre | Valeur obtenue |
 |---|---|
