@@ -280,11 +280,11 @@ subnet 192.168.100.0 netmask 255.255.255.0 {
   default-lease-time 86400;
   max-lease-time 604800;
 
-  group {      # Regroupement de configurations spécifiques pour des hôtes
-    use-host-decl-names true;      # Utilise le nom de l'hôte déclaré comme nom pour le client
-    host linux1 {      # Déclaration d'une machine spécifique nommée linux1
-      hardware ethernet 34:17:eb:a9:2d:7e;      # Adresse MAC unique de la machine cible
-      fixed-address 192.168.100.5;      # Adresse IP fixe réservée exclusivement à cette machine
+  group {                                   # Regroupement de configurations
+    use-host-decl-names true;               # Utilise le nom de l'hôte déclaré
+    host linux1 {                           # Déclaration de la machine linux1
+      hardware ethernet 34:17:eb:a9:2d:7e;  # Adresse MAC de la machine cible
+      fixed-address 192.168.100.5;          # Adresse IP fixe réservée
     }
   }
 }
