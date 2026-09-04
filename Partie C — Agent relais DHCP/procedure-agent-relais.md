@@ -35,12 +35,7 @@ Les trames ARP et BOOTP (sur lesquelles repose le protocole DHCP) ne traversent 
 
 L'agent relais est généralement installé sur la **passerelle** du sous-réseau concerné, à l'aide du paquet `dhcp-relay`.
 
-```
-┌──────────────┐        ┌──────────────────┐        ┌──────────────┐
-│  Sous-réseau │        │   Agent relais    │        │   Serveur    │
-│   A (client) │──────▶│  (sur passerelle) │──────▶│     DHCP     │
-└──────────────┘        └──────────────────┘        └──────────────┘
-```
+<img src="./images/schema_agent.png" alt="Schema Agent relais DHCP" width="25%">
 
 > [!TIP]
 > Cette solution permet de centraliser l'administration DHCP sur un serveur unique (ou une grappe de serveurs, cf. section suivante), même lorsque le réseau comporte plusieurs sous-réseaux physiquement ou logiquement séparés.
