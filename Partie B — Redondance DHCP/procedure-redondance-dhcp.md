@@ -140,8 +140,9 @@ INTERFACESv4="enp0s3"
 
 ### 5.4 Configuration de dhcpd.conf
 
-Dans le fichier de configuration : `sudo nano /etc/dhcp/dhcpd.conf` :
-On met donc ce script pour définir la plage d'adresses IP à distribuer, la passerelle, serveur DNS et sa durée de location (bail). ce sera le même pour le serveur 2.
+Dans le fichier de configuration DHCP `/etc/dhcp/dhcpd.conf`, accessible avec la commande `sudo nano /etc/dhcp/dhcpd.conf`, on définit les paramètres nécessaires au fonctionnement du serveur DHCP : la plage d’adresses IP à distribuer, la passerelle par défaut, le serveur DNS ainsi que la durée du bail DHCP.
+
+Cette configuration sera également appliquée au serveur DHCP 2 pour notre test.
 
 ```conf
 subnet 10.0.2.0 netmask 255.255.255.0 {
