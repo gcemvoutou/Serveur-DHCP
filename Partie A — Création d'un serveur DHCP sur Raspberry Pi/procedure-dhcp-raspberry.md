@@ -162,7 +162,7 @@ sudo systemctl status isc-dhcp-server
 ```
 
 <img src="./images/5-status-service.png" alt="Démarrage et vérification du service
-" width="60%">
+" width="80%">
 
 Une fois le service démarré, on relie le Raspberry Pi à un switch (sans autre serveur DHCP actif dessus) et on y connecte un poste client, afin qu'il obtienne automatiquement une adresse IP par DHCP.
 
