@@ -257,7 +257,7 @@ ipconfig /release
 ipconfig /renew
 ```
 
-<img src="./images/11-nouvelle-plage-client.png" alt="Modification de la plage d'adresses " width="50%">
+<img src="./images/11-nouvelle-plage-client.png" alt="Modification de la plage d'adresses " width="40%">
 
 Le client obtient bien une adresse comprise dans la nouvelle plage (`192.168.100.40 - 192.168.100.50`).
 
