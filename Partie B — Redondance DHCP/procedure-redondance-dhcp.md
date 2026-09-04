@@ -100,7 +100,7 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install isc-dhcp-server
 ```
 
-<img src="./images/5-install-isc-dhcp-server.png" alt="Installation d'isc-dhcp-server" width="25%">
+<img src="./images/5-install-isc-dhcp-server.png" alt="Installation d'isc-dhcp-server" width="30%">
 
 ### 5.3 Identification et déclaration de l'interface réseau
 
