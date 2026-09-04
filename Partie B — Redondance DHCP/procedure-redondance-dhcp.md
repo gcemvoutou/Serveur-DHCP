@@ -214,8 +214,10 @@ Les deux serveurs DHCP sont ensuite démarrés **simultanément**, afin d'observ
 ```powershell
 ipconfig
 ```
+Le résultat de la commande ipconfig montre que le client Windows a bien reçu l'adresse IP dynamique 10.0.2.102. Cette adresse se trouve bien dans la plage définie (10.0.2.100 à .150).
 
 > `images/12-client-windows-ipconfig.png`
+
 
 | Paramètre | Valeur obtenue |
 |---|---|
