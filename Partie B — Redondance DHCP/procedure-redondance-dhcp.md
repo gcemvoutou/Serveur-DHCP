@@ -102,19 +102,46 @@ sudo apt install isc-dhcp-server
 
 > `images/05-install-isc-dhcp-server.png`
 
-### 5.3 Déclaration de l'interface réseau
+### 5.3 Identification et déclaration de l'interface réseau
 
-Dans `/etc/default/isc-dhcp-server` :
+Avant de configurer le service, il est nécessaire d'identifier précisément l'interface réseau du serveur sur laquelle le service DHCP devra écouter les requêtes des clients.
+
+**Identification de l'interface :**
+
+```bash
+ip a
+```
+
+> <img src="./images/06-ip-a-serveur1.png" alt="Identification de l'interface réseau" width="50%">
+
+Cette commande liste l'ensemble des interfaces réseau de la machine. Sur cette VM, l'interface active correspondant à la carte réseau utilisée est `enp0s3` (nomenclature standard sous Debian/Ubuntu pour la première interface Ethernet détectée).
+
+> [!NOTE]
+> Le nommage des interfaces réseau (`enp0s3`, `eth0`, etc.) peut varier selon la distribution et la configuration matérielle/virtuelle de la machine. Il est donc indispensable de vérifier ce nom via `ip a` avant de configurer isc-dhcp-server, plutôt que de le déduire par défaut.
+
+**Déclaration de l'interface dans la configuration du service :**
+
+Le fichier `/etc/default/isc-dhcp-server` définit sur quelle(s) interface(s) le service `isc-dhcp-server` doit écouter les requêtes DHCP. Sans cette déclaration, le service ne sait pas sur quel réseau il doit distribuer des adresses IP et refuse de démarrer correctement.
+
+```bash
+sudo nano /etc/default/isc-dhcp-server
+```
+
+On renseigne l'interface identifiée précédemment :
 
 ```bash
 INTERFACESv4="enp0s3"
 ```
 
-> `images/06-ip-a-serveur1.png`
->
-> `images/07-interfacesv4.png`
+> <img src="./images/07-interfacesv4.png" alt="Déclaration de l'interface dans isc-dhcp-server" width="50%">
+
+> [!IMPORTANT]
+> Une interface mal renseignée (ou laissée vide) est une cause fréquente d'échec de démarrage du service `isc-dhcp-server`, ou d'un service démarré mais qui ne répond à aucune requête DHCP. C'est l'une des premières choses à vérifier en cas de dysfonctionnement.
 
 ### 5.4 Configuration de dhcpd.conf
+
+Dans le fichier de configuration : `sudo nano /etc/dhcp/dhcpd.conf` :
+On met donc ce script pour définir la plage d'adresses IP à distribuer, la passerelle, serveur DNS et sa durée de location (bail). ce sera le même pour le serveur 2.
 
 ```conf
 subnet 10.0.2.0 netmask 255.255.255.0 {
