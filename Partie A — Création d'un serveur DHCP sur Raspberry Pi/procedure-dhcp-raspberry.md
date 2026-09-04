@@ -1,4 +1,6 @@
 # Partie A — Création d'un serveur DHCP sur Raspberry Pi
+![Linux](https://img.shields.io/badge/Linux-Serveur%20DHCP-FCC624?logo=linux&logoColor=black)
+![Type](https://img.shields.io/badge/Type-Scolaire-blue)
 
 [⬅ Retour au sommaire du projet](../README.md)
 
