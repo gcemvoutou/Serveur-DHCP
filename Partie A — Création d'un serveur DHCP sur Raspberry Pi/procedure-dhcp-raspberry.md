@@ -193,7 +193,7 @@ cat dhcpd.leases
 
 > `images/07-dhcpd-leases.png`
 
-On y retrouve l'adresse `192.168.100.12`, associée à l'adresse MAC de la machine cliente, avec le statut `binding state active`.
+On y retrouve l'adresse `192.168.100.12`, associée à l'adresse MAC de la machine cliente, avec le statut `binding state active` signifiant que le bail DHCP est actuellement en cours de validité et attribué à une machine cliente.
 
 ---
 
