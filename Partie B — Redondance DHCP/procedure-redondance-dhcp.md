@@ -25,7 +25,7 @@ Disposer d'un second serveur DHCP en cas de panne du premier, en configurant deu
 
 ## 1. Architecture à réaliser
 
-> `images/01-architecture-cible.png`
+<img src="./images/1-architecture-cible.png" alt="architecture-cible" width="50%">
 
 L'architecture repose sur un réseau NAT VirtualBox (`10.0.2.0/24`) regroupant quatre machines virtuelles :
 
