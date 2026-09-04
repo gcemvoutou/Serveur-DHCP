@@ -245,13 +245,13 @@ sudo cat /var/lib/dhcp/dhcpd.leases
 
 ### Sur le serveur 1
 
-<img src="./images/14-leases-serveur1.png" alt="Sur le serveur 1" width="45%">
+<img src="./images/14-leases-serveur1.png" alt="Sur le serveur 1" width="40%">
 
 Le serveur 1 a attribué l'adresse `10.0.2.102` au client Windows.
 
 ### Sur le serveur 2
 
-<img src="./images/15-leases-serveur2.png" alt="Sur le serveur 2" width="45%">
+<img src="./images/15-leases-serveur2.png" alt="Sur le serveur 2" width="30%">
 
 Le serveur 2 a attribué l'adresse `10.0.2.103` au client Linux, **mais** l'adresse `10.0.2.102` apparaît **également** dans son propre fichier de baux.
 
