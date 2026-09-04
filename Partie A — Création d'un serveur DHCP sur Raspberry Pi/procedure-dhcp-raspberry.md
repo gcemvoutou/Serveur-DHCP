@@ -65,7 +65,7 @@ sudo apt update
 sudo apt upgrade -y
 ```
 
-> `images/02-maj-systeme.png`
+<img src="./images/2-maj-systeme.png" alt="Mise à jour du système" width="50%">
 
 ---
 
@@ -95,7 +95,7 @@ Puis on recharge la configuration :
 sudo sysctl -p /etc/sysctl.conf
 ```
 
-> `images/03-sysctl-ip-forward.png`
+<img src="./images/3-sysctl-ip-forward.png" alt="Activation de l'IP forwarding" width="50%">
 
 ### 5.2 Règles de NAT (iptables)
 
@@ -150,7 +150,7 @@ subnet 192.168.100.0 netmask 255.255.255.0 {
 }
 ```
 
-> `images/04-dhcpd-conf.png`
+<img src="./images/4-dhcpd-conf.png" alt="Configuration du fichier dhcpd.conf" width="50%">
 
 ---
 
@@ -171,7 +171,7 @@ Les échanges DHCP (`DHCPDISCOVER`, `DHCPOFFER`, `DHCPREQUEST`, `DHCPACK`) sont 
 
 ## 8. Test côté client Windows
 
-> `images/06-client-windows-ipconfig.png`
+<img src="./images/6-client-windows-ipconfig.png" alt="Test côté client Windows" width="50%">
 
 | Paramètre | Valeur obtenue |
 |---|---|
@@ -191,7 +191,7 @@ cd /var/lib/dhcp
 cat dhcpd.leases
 ```
 
-> `images/07-dhcpd-leases.png`
+<img src="./images/7-dhcpd-leases.png" alt="Vérification des baux (fichier leases)" width="50%">
 
 On y retrouve l'adresse `192.168.100.12`, associée à l'adresse MAC de la machine cliente, avec le statut `binding state active` signifiant que le bail DHCP est actuellement en cours de validité et attribué à une machine cliente.
 
@@ -213,7 +213,7 @@ ipconfig /release
 ipconfig /renew "Ethernet"
 ```
 
-> `images/08-renew-windows.png`
+<img src="./images/8-renew-windows.png" alt="Renouvellement du bail auprès du serveur DHCP" width="50%">
 
 **Cette commande** force l'adaptateur **réseau** spécifié (ici "Ethernet") à contacter à nouveau le serveur DHCP pour obtenir une configuration IP ,Le client récupère la même adresse IP (`192.168.100.12`), car le bail précédent n'a pas encore expiré.
 
@@ -227,11 +227,11 @@ Une machine Linux connectée au switch obtient automatiquement une adresse compr
 ip a
 ```
 
-> `images/09-client-linux-ip-a.png`
+<img src="./images/09-client-linux-ip-a.png" alt="Test côté client Linux" width="50%">
 
 L'adresse obtenue (`192.168.100.13/24`) est confirmée côté serveur dans le fichier des baux, aux côtés de la machine Windows.
 
-> `images/10-leases-client-linux.png`
+<img src="./images/10-leases-client-linux.png" alt="Test côté client Linux bis" width="50%">
 
 ---
 
@@ -256,11 +256,12 @@ ipconfig /release
 ipconfig /renew
 ```
 
-> `images/11-nouvelle-plage-client.png`
+<img src="./images/11-nouvelle-plage-client.png" alt="Modification de la plage d'adresses " width="50%">
 
 Le client obtient bien une adresse comprise dans la nouvelle plage (`192.168.100.40 - 192.168.100.50`).
 
-> `images/12-leases-nouvelle-plage.png`
+<img src="./images/12-leases-nouvelle-plage.png" alt="Modification de la plage d'adresses bis " width="50%">
+
 
 ---
 
@@ -297,14 +298,14 @@ sudo dhclient -r    # libère le bail en cours
 sudo dhclient       # redemande une adresse au serveur DHCP
 ```
 
-> `images/13-client-linux-ip-fixe.png`
+<img src="./images/13-client-linux-ip-fixe.png" alt="Réservation d'une adresse IP fixe " width="50%">
 
 La machine obtient bien l'adresse IP fixe configurée (`192.168.100.5`).
 
 > [!NOTE]
 > Cette adresse **n'apparaît pas** dans le fichier des baux dynamiques (`/var/lib/dhcp/dhcpd.leases`). Une adresse réservée par adresse MAC est définie de manière statique dans `dhcpd.conf` et ne génère pas de bail dynamique classique.
 
-> `images/14-leases-sans-fixe.png`
+<img src="./images/14-leases-sans-fixe.png" alt="Réservation d'une adresse IP fixe bis" width="50%">
 
 ---
 
@@ -324,7 +325,7 @@ La machine obtient bien l'adresse IP fixe configurée (`192.168.100.5`).
 
 ## 15. Schéma récapitulatif
 
-> `images/15-schema-recapitulatif.png`
+<img src="./images/15-schema-recapitulatif.png" alt="Schéma récapitulatif" width="50%">
 
 Ce schéma synthétise l'architecture complète : le Raspberry Pi assure à la fois la distribution des adresses IP sur le réseau local (`192.168.100.0/24`) et le routage vers Internet via son interface Wi-Fi.
 
