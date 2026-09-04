@@ -61,7 +61,7 @@ IPv4 Prefix  : 10.0.2.0/24
 Enable DHCP  : décoché
 ```
 
-<img src="./images/2-virtualbox-reseau-nat.png" alt="Configuration du réseau NAT VirtualBox" width="45%">
+<img src="./images/2-virtualbox-reseau-nat.png" alt="Configuration du réseau NAT VirtualBox" width="25%">
 
 > [!IMPORTANT]
 > Le DHCP intégré de VirtualBox **doit impérativement être désactivé** sur ce réseau NAT, sous peine d'entrer en conflit avec les serveurs DHCP mis en place dans ce TP.
