@@ -100,7 +100,7 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install isc-dhcp-server
 ```
 
-<img src="./images/5-install-isc-dhcp-server.png" alt="Installation d'isc-dhcp-server" width="45%">
+<img src="./images/5-install-isc-dhcp-server.png" alt="Installation d'isc-dhcp-server" width="25%">
 
 ### 5.3 Identification et déclaration de l'interface réseau
 
@@ -112,7 +112,7 @@ Avant de configurer le service, il est nécessaire d'identifier précisément l'
 ip a
 ```
 
-> <img src="./images/06-ip-a-serveur1.png" alt="Identification de l'interface réseau" width="50%">
+> <img src="./images/6-ip-a-serveur1.png" alt="Identification de l'interface réseau" width="50%">
 
 Cette commande liste l'ensemble des interfaces réseau de la machine. Sur cette VM, l'interface active correspondant à la carte réseau utilisée est `enp0s3` (nomenclature standard sous Debian/Ubuntu pour la première interface Ethernet détectée).
 
@@ -133,7 +133,7 @@ On renseigne l'interface identifiée précédemment :
 INTERFACESv4="enp0s3"
 ```
 
-<img src="./images/07-interfacesv4.png" alt="Déclaration de l'interface dans isc-dhcp-server" width="50%">
+<img src="./images/7-interfacesv4.png" alt="Déclaration de l'interface dans isc-dhcp-server" width="50%">
 
 > [!IMPORTANT]
 > Une interface mal renseignée (ou laissée vide) est une cause fréquente d'échec de démarrage du service `isc-dhcp-server`, ou d'un service démarré mais qui ne répond à aucune requête DHCP. C'est l'une des premières choses à vérifier en cas de dysfonctionnement.
@@ -154,7 +154,7 @@ subnet 10.0.2.0 netmask 255.255.255.0 {
 }
 ```
 
-> `images/08-dhcpd-conf-serveur1.png`
+<img src="./images/8-dhcpd-conf-serveur1.png" alt="Configuration de dhcpd.conf" width="50%">
 
 **Récapitulatif de la configuration :**
 
