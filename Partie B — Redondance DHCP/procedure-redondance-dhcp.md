@@ -154,7 +154,7 @@ subnet 10.0.2.0 netmask 255.255.255.0 {
 }
 ```
 
-<img src="./images/8-dhcpd-conf-serveur1.png" alt="Configuration de dhcpd.conf" width="50%">
+<img src="./images/8-dhcpd-conf-serveur1.png" alt="Configuration de dhcpd.conf" width="40%">
 
 **Récapitulatif de la configuration :**
 
