@@ -100,7 +100,7 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install isc-dhcp-server
 ```
 
-> `images/05-install-isc-dhcp-server.png`
+<img src="./images/5-install-isc-dhcp-server.png" alt="Installation d'isc-dhcp-server" width="45%">
 
 ### 5.3 Identification et déclaration de l'interface réseau
 
@@ -133,7 +133,7 @@ On renseigne l'interface identifiée précédemment :
 INTERFACESv4="enp0s3"
 ```
 
-> <img src="./images/07-interfacesv4.png" alt="Déclaration de l'interface dans isc-dhcp-server" width="50%">
+<img src="./images/07-interfacesv4.png" alt="Déclaration de l'interface dans isc-dhcp-server" width="50%">
 
 > [!IMPORTANT]
 > Une interface mal renseignée (ou laissée vide) est une cause fréquente d'échec de démarrage du service `isc-dhcp-server`, ou d'un service démarré mais qui ne répond à aucune requête DHCP. C'est l'une des premières choses à vérifier en cas de dysfonctionnement.
@@ -181,7 +181,7 @@ Masque      : 255.255.255.0
 Passerelle  : 10.0.2.1
 ```
 
-> `images/09-ipv4-manuel-serveur1.png`
+<img src="./images/9-ipv4-manuel-serveur1.png" alt="Passage en IP fixe" width="45%">
 
 ### 5.6 Activation du service
 
@@ -190,7 +190,7 @@ sudo systemctl restart isc-dhcp-server
 sudo systemctl status isc-dhcp-server
 ```
 
-> `images/10-status-serveur1.png`
+<img src="./images/10-status-serveur1.png" alt="Activation du service" width="45%">
 
 ---
 
@@ -203,7 +203,7 @@ On reproduit à l'identique la procédure d'installation et de configuration sur
 
 Les deux serveurs DHCP sont ensuite démarrés **simultanément**, afin d'observer leur comportement lorsqu'ils distribuent la même plage d'adresses sans aucun mécanisme de synchronisation.
 
-> `images/11-status-serveur2.png`
+<img src="./images/11-status-serveur2.png" alt=" Réplication de la configuration" width="45%">
 
 ---
 
@@ -216,7 +216,7 @@ ipconfig
 ```
 Le résultat de la commande ipconfig montre que le client Windows a bien reçu l'adresse IP dynamique 10.0.2.102. Cette adresse se trouve bien dans la plage définie (10.0.2.100 à .150).
 
-> `images/12-client-windows-ipconfig.png`
+<img src="./images/12-client-windows-ipconfig.png" alt=" Client Windows" width="45%">
 
 
 | Paramètre | Valeur obtenue |
@@ -231,7 +231,7 @@ Le résultat de la commande ipconfig montre que le client Windows a bien reçu l
 ip a
 ```
 
-> `images/13-client-linux-ip-a.png`
+<img src="./images/13-client-linux-ip-a.png" alt=" Client Linux" width="45%">
 
 Le client Linux obtient l'adresse `10.0.2.103/24`, avec la mention `dynamic`, confirmant une attribution automatique par un serveur DHCP.
 
@@ -245,13 +245,13 @@ sudo cat /var/lib/dhcp/dhcpd.leases
 
 ### Sur le serveur 1
 
-> `images/14-leases-serveur1.png`
+<img src="./images/14-leases-serveur1.png" alt="Sur le serveur 1" width="45%">
 
 Le serveur 1 a attribué l'adresse `10.0.2.102` au client Windows.
 
 ### Sur le serveur 2
 
-> `images/15-leases-serveur2.png`
+<img src="./images/15-leases-serveur2.png" alt="Sur le serveur 2" width="45%">
 
 Le serveur 2 a attribué l'adresse `10.0.2.103` au client Linux, **mais** l'adresse `10.0.2.102` apparaît **également** dans son propre fichier de baux.
 
