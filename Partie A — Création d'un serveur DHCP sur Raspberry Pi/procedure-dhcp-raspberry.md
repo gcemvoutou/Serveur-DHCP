@@ -75,7 +75,7 @@ sudo apt upgrade -y
 sudo apt install isc-dhcp-server
 ```
 
-On édite ensuite le fichier `/etc/default/isc-dhcp-server` afin d'y déclarer l'interface réseau sur laquelle le serveur doit écouter les requêtes DHCP, ici `eth0`.
+On édite ensuite le fichier `/etc/default/isc-dhcp-server` pour y déclarer l'interface réseau sur laquelle le serveur doit écouter les requêtes DHCP, ici `eth0`.
 
 ---
 
@@ -103,7 +103,7 @@ sudo sysctl -p /etc/sysctl.conf
 sudo apt install iptables
 ```
 
-**Masquerading** — réécrit les adresses IP des paquets provenant du réseau local (`eth0`) afin qu'ils puissent sortir sur Internet via l'interface Wi-Fi (`wlan0`) :
+**Masquerading** — réécrit les adresses IP des paquets provenant du réseau local (`eth0`) pour qu'ils puissent sortir sur Internet via l'interface Wi-Fi (`wlan0`) :
 
 ```bash
 sudo iptables -t nat -A POSTROUTING -o wlan0 -j MASQUERADE
