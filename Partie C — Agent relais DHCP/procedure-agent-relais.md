@@ -183,7 +183,7 @@ Le client obtient l'adresse `10.0.2.104`.
 sudo cat /var/lib/dhcp/dhcpd.leases
 ```
 
-> `images/05-leases-repliques.png`
+<img src="./images/05-leases-repliques.png" alt="leases-repliques" width="40%">
 
 Le bail correspondant à l'adresse `10.0.2.104` apparaît **sur les deux serveurs** : c'est la réplication du cluster failover qui assure cette synchronisation, contrairement à la configuration « à plat » testée en partie B.
 
