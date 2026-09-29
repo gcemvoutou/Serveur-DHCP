@@ -143,7 +143,7 @@ subnet 10.0.2.0 netmask 255.255.255.0 {
 }
 ```
 
-> <img src="./images/02-dhcpd-conf-secondaire.png" alt="Secondaire" width="20%">
+<img src="./images/02-dhcpd-conf-secondaire.png" alt="Secondaire" width="20%">
 
 > [!NOTE]
 > La directive `mclt` n'est renseignée que du côté du serveur **primaire** ; elle est héritée automatiquement par le secondaire lors de l'établissement de la liaison.
@@ -157,7 +157,7 @@ sudo systemctl restart isc-dhcp-server
 sudo journalctl -u isc-dhcp-server -f
 ```
 
-> `images/03-journalctl-failover.png`
+<img src="./images/03-journalctl-failover.png" alt="Journalctl-failover" width="20%">
 
 La ligne de log `Both servers normal` confirme que le protocole de failover est actif et que la synchronisation entre les deux serveurs DHCP est effective.
 
