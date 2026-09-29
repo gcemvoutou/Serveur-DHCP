@@ -100,7 +100,7 @@ subnet 10.0.2.0 netmask 255.255.255.0 {
 }
 ```
 
-> `images/01-dhcpd-conf-primaire.png`
+<img src="./images/01-dhcpd-conf-primaire.png" alt="Primary" width="40%">
 
 | Directive | Rôle |
 |---|---|
