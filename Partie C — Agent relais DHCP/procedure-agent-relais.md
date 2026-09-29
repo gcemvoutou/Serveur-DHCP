@@ -157,7 +157,7 @@ sudo systemctl restart isc-dhcp-server
 sudo journalctl -u isc-dhcp-server -f
 ```
 
-<img src="./images/03-journalctl-failover.png" alt="Journalctl-failover" width="20%">
+<img src="./images/03-journalctl-failover.png" alt="Journalctl-failover" width="40%">
 
 La ligne de log `Both servers normal` confirme que le protocole de failover est actif et que la synchronisation entre les deux serveurs DHCP est effective.
 
