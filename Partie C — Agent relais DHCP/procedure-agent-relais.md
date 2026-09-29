@@ -173,7 +173,7 @@ On connecte un client et on le laisse obtenir une adresse IP :
 ipconfig
 ```
 
-<img src="./images/04-client-ipconfig.png" alt="IP config Windows" width="70%">
+<img src="./images/04-client-ipconfig.png" alt="IP config Windows" width="40%">
 
 Le client obtient l'adresse `10.0.2.104`.
 
