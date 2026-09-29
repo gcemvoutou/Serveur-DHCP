@@ -143,7 +143,7 @@ subnet 10.0.2.0 netmask 255.255.255.0 {
 }
 ```
 
-> `images/02-dhcpd-conf-secondaire.png`
+> <img src="./images/02-dhcpd-conf-secondaire.png" alt="Secondaire" width="20%">
 
 > [!NOTE]
 > La directive `mclt` n'est renseignée que du côté du serveur **primaire** ; elle est héritée automatiquement par le secondaire lors de l'établissement de la liaison.
